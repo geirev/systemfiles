@@ -1,0 +1,17 @@
+[push]
+	default = current
+[user]
+	email = geir.evensen@gmail.com
+	name = geirev
+[rerere]
+	enabled = true
+[alias]
+	tree = log --graph --decorate --pretty=oneline --abbrev-commit
+	enforce = push --force-with-lease
+        pr = "!f() { git fetch $1 pull/$2/head:pull_$2; git switch pull_$2; }; f"
+[init]
+	defaultbranch = main
+[pull]
+	rebase = true
+[rebase]
+	autoStash = true

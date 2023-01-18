@@ -1,0 +1,4 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/private/geve/ERT/libres/lib/analysis/modules/tests/test-data/poly_normal'
+let g:netrw_dirhist_2='/private/geve/ERT/installation/lib/python2.7/site-packages/res/fm/rms'

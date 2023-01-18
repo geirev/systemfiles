@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='/home/AD.NORCERESEARCH.NO/geev/Dropbox/Programs/Schedule_parser/src'
+let g:netrw_dirhist_4='/home/AD.NORCERESEARCH.NO/geev/ERT/ert1000/jobs'
+let g:netrw_dirhist_3='/home/AD.NORCERESEARCH.NO/geev/Dropbox/Statoil/eclipse/refcase'
+let g:netrw_dirhist_2='/home/AD.NORCERESEARCH.NO/geev/Dropbox/Axis_project/accposfull'
+let g:netrw_dirhist_1='/home/AD.NORCERESEARCH.NO/geev/ERT/ert/.github'
+let g:netrw_dirhist_0='/home/AD.NORCERESEARCH.NO/geev/ERT/ert/.git'
+let g:netrw_dirhist_9='/home/AD.NORCERESEARCH.NO/geev/Dropbox/Axis_project/pos'
+let g:netrw_dirhist_8='/home/AD.NORCERESEARCH.NO/geev/Dropbox/Apps/Overleaf/DAReview'
+let g:netrw_dirhist_7='/home/AD.NORCERESEARCH.NO/geev/Dropbox/Apps/Overleaf'
+let g:netrw_dirhist_6='/home/AD.NORCERESEARCH.NO/geev/Dropbox/Apps'

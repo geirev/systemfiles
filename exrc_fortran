@@ -1,0 +1,65 @@
+set autoindent
+set showmatch
+set autowrite
+set wrapmargin=8
+set nonumber
+set norelativenumber
+set report=1
+set tabstop=50
+set shiftwidth=3
+set nomagic
+map  :!make new:!make tags:!make
+map  :!make new
+map  :!make tags
+
+:iab brea 
+\real, intent(in) ::
+
+:iab bint 
+\integer, intent(in) ::
+
+:iab bcha 
+\character(len=3), intent(in) ::
+
+
+:iab bdo 
+\for i=1,100
+\do
+\enddo
+
+:iab bsel 
+\select case(VAR)
+\case('xxx')
+\case default
+\end select?VARciw
+
+:iab bif 
+\if (TEST) then
+\else
+\endif?TESTciw
+
+:iab bfun 
+\module m_FUN
+\use mod_dimensions
+\use mod_states
+\contains
+\real function m_FUN
+\
+\end subroutine
+\end module
+
+:iab bsub 
+\module m_SUB
+\use mod_dimensions
+\use mod_states
+\contains
+\subroutine SUB
+\
+\end subroutine
+\end module
+
+:iab bmain 
+\program main
+\use mod_dimensions
+\use mod_states
+\end program

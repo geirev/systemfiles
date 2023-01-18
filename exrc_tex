@@ -1,0 +1,89 @@
+set noautoindent
+set noshowmatch
+set autowrite
+set wrapmargin=8
+set nonumber
+set norelativenumber
+set report=1
+set tabstop=50
+set shiftwidth=3
+set nomagic
+map  :!pdflatex %
+map  :!bibtex $(basename % \.tex).aux 2> /dev/null 
+map  :!evince $(basename % \.tex).pdf 2> /dev/null & 
+inoremap å {\aa}
+inoremap Å {\AA}
+inoremap æ {\ae}
+inoremap Æ {\AE}
+inoremap ø {\o}
+inoremap Ø {\O}
+
+" Remove funny auto indents in tex files
+let g:tex_indent_items=0
+let g:tex_indent_and=0
+let g:tex_indent_brace=0
+
+" https://thevaluable.dev/vim-expert/     : dnc deletes content of next curly bracket
+:onoremap nc :normal! f{vi{<cr>
+
+:ab bg       \includegraphics[width=0.99\textwidth,trim= 0 0 0 0]{}
+:ab ba       %\begin{array}{lcr}  &  &  &  \\\end{array}%kkI
+:ab bc          \begin{center}\end{center}k0i
+:ab bd       %\begin{description}\item[]\end{description}%kk$i
+:ab ben      %\begin{enumerate}\item\end{enumerate}%kkA
+:ab beq      %\begin{equation}\label{eq:}\end{equation}%0kkki
+:ab bmdf     %\begin{mdframed}\end{mdframed}%0kki
+:ab balign   %\begin{align} &  \label{eq:}\\   & \label{eq:}\end{align}%kkki
+:ab bsplit      \begin{split}\end{split}
+:ab bfi      %\begin{figure}[p]\caption{   \label{fig:}}\end{figure}%kkkI
+:ab bi       %\begin{itemize}\item\end{itemize}%kkA 
+:ab bq       %\begin{quote}\end{quote}%kkI
+:ab bt       %\begin{table}[tb]\caption{\label{tab:}}\end{table}%kkk0i
+:ab btab        \begin{tabular}{}\hline &  &\\\hline\end{tabular}
+:ab btb      %\begin{tabbing} \= \= \=   \kill\>     \\\end{tabbing}%%kkkI
+:ab bv       %\begin{verbatim}\end{verbatim}%kki
+:ab bcase       \begin{cases}\end{cases}
+:ab blabe    \label{eq:}F:
+:ab blabs    \label{sec:}F:
+:ab bref (\ref{eq:})F:
+:ab brefe Eq.~(\ref{eq:})F:
+:ab brefee Eqs.~(\ref{eq:}) and (\ref{eq:})2F:
+:ab brefs Sec.~\ref{sec:}F:
+:ab brefc Chap.~\ref{chap:}F:
+:ab breft Tab.~\ref{tab:}F:
+:ab breff Fig.~\ref{fig:}F:
+:ab brefff Figs.~\ref{fig:} and \ref{fig:}F:
+:ab bind \setlength{\parindent}{0pt} \setlength{\parskip}{3mm}
+:ab bfra \frac{}{}2F{
+:ab bgra \includegraphics[width=0.3\textwidth]{}
+
+:iab bart 
+\\documentclass[11pt,a4paper]{article}
+\\usepackage[pdftex]{xcolor}
+\\usepackage[pdftex]{graphicx}
+\\usepackage{epstopdf}
+\\usepackage{amsthm}
+\\usepackage{newtxmath}
+\\usepackage{newtxtext}
+\\usepackage[a4paper,head=20mm,headsep=7mm,top=20mm,left=20mm,right=20mm,bottom=20mm]{geometry}
+\\begin{document}
+\\end{document}
+
+:iab bletter 
+\\documentclass[11pt,a4paper]{article}
+\\usepackage[pdftex]{xcolor}
+\\usepackage[pdftex]{graphicx}
+\\usepackage{epstopdf}
+\\usepackage{amsthm}
+\\usepackage{newtxmath}
+\\usepackage{newtxtext}
+\\usepackage[a4paper,head=20mm,headsep=7mm,top=20mm,left=20mm,right=20mm,bottom=20mm]{geometry}
+\\begin{document}
+\\hfill Bergen \today
+\Yours sincerely,\\
+\\includegraphics[width=0.3\textwidth]{/home/geve/Dropbox/signatureGE.png}\\
+\Geir Evensen \\
+\Chief Scientist at NORCE Norwegian Research Centre AS\\
+\+47 93 09 09 47\\
+\geev@norceresearch.no
+\\end{document}
