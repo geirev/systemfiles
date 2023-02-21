@@ -113,7 +113,16 @@ if [ "$color_prompt" = yes ]; then
       git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1/'
    }
 #    PS1="\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[1;31m\]\w\[\033[0;93m\]\$(parse_git_branch)\[\033[0;97m\]\$ "
-    PS1="\[$COLOR_BLUE\]\u@\h"
+    PS1="\[$COLOR_BLUE\]\u@"
+    hname=$(hostname | cut -f1 -d.)
+    case $hname in
+    "bgo-1515")
+       PS1+="\[$COLOR_BLUE\]\h"
+       ;;
+    *)
+       PS1+="\[$COLOR_YELLOW\]\h"
+       ;;
+    esac
     PS1+="\[$COLOR_WHITEA\]:"
     PS1+="\[$COLOR_ORANGE\]\w"
     PS1+="\[\$(git_color)\]"        # colors git status
@@ -159,6 +168,7 @@ alias d='$HOME/.dropbox-dist/dropboxd & '
 alias g='gnuplot'
 alias x='chmod +x'
 alias m='more'
+alias man='tldr'
 alias r='fc -s'
 alias h='history'
 alias ee='kill -9 $(ps | grep python | cut -f2 -d: | cut -f1 -d"p")'
@@ -249,5 +259,5 @@ export LM_LICENSE_FILE=/ecl/macros/license.lic
 export LC_NUMERIC="en_US.UTF-8"
 
 export GREP_COLORS='ms=01;31:mc=01;31:sl=:cx=31:fn=33:ln=32:bn=32:se=36'
-export CDPATH=".:../:$HOME:$HOME/Dropbox/:$HOME/Dropbox/Programs:$HOME/Dropbox/Projects:$HOME/Dropbox/Papers:$HOME/Dropbox/Apps/Overleaf/:$HOME/Dropbox/Statoil/:$HOME/ERT"
+export CDPATH=".:../:$HOME:$HOME/Dropbox/:$HOME/Dropbox/Programs:$HOME/Dropbox/Projects:$HOME/Dropbox/Publications:$HOME/Dropbox/Apps/Overleaf/:$HOME/Dropbox/Statoil/:$HOME/ERT"
 

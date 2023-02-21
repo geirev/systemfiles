@@ -165,6 +165,10 @@ cabbrev B b
 nnoremap <C-Right> :bn
 nnoremap <C-Left> :bp
 
+" Cycling through vimgreps
+nnoremap <A-Right> :cnext
+nnoremap <A-Left> :cprev
+
 let fortran_free_source=1
 let fortran_have_tabs=0
 let fortran_more_precise=1
