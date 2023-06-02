@@ -12,6 +12,12 @@
 " have made, as well as sanely reset options when re-sourcing .vimrc
 set nocompatible
 
+set wildoptions=pum
+
+" visual shifting (builtin-repeat)
+vnoremap < <gv
+vnoremap > >gv
+
 set fileformat=unix
 set encoding=UTF-8
 
@@ -131,6 +137,7 @@ set list
 "noremap <silent> <C-Down> <c-w>j
 
 " Formatting paragraph
+" nnoremap <F1> gqap
 nnoremap <F1> gq}
 " Formatting until next %
 nnoremap <F2> gq/%
@@ -143,6 +150,10 @@ nnoremap <F5> ma:let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>'a
 nnoremap <F6> :noh
 " Introduce a space between each character
 xnoremap <F7> s<c-r>=substitute(@", '.\ze.', '& ', 'g')<cr>
+" To remove parantheses (start with cursor on a paranthes and it will remove also the matching one)
+nnoremap <F8> ma%x`ax
+" Vim spell checker 
+nnoremap <F9> :setlocal spell! spelllang=en_us<CR>
 
 "Remapping PgUp PgDw and arrow keys to work in insert mode
 inoremap [6~ 

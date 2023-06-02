@@ -19,6 +19,7 @@
 	diffFilter = diff-so-fancy --patch
 [core]
 	pager = diff-so-fancy | less --tabs=4 -RFX
+	excludesfile = /home/AD.NORCERESEARCH.NO/geev/.gitignore
 [pager]
 	show = diff-so-fancy | less --tabs=1,5 -RFX
 [color]

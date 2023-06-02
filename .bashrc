@@ -159,7 +159,7 @@ fi
 
 # some more ls aliases
 alias gitlog='git log --graph --decorate --pretty=oneline --abbrev-commit'
-alias ll='ls -alF'
+alias ll='ls -alhF'
 alias lsa='ls -A'
 alias ltt='ls -lt *.tex'
 alias l='ls -CF'
@@ -178,6 +178,8 @@ alias lp1='lpr -o sides=two-sided-long-edge -o media="a4" -o fit-to-page'
 alias mtm='~/Dropbox/MT_Software_Suite_linux-x64_2019.1.1/mtmanager/linux-x64/bin/mtmanager'
 alias lock='gnome-screensaver-command -l'
 alias logout='gnome-session-quit'
+alias top='htop'
+alias tec360b='tec360 --osmesa -b '
 
 
 function evince {
@@ -260,4 +262,7 @@ export LC_NUMERIC="en_US.UTF-8"
 
 export GREP_COLORS='ms=01;31:mc=01;31:sl=:cx=31:fn=33:ln=32:bn=32:se=36'
 export CDPATH=".:../:$HOME:$HOME/Dropbox/:$HOME/Dropbox/Programs:$HOME/Dropbox/Projects:$HOME/Dropbox/Publications:$HOME/Dropbox/Apps/Overleaf/:$HOME/Dropbox/Statoil/:$HOME/ERT"
+
+export CONAN_CACERT_PATH=/etc/ssl/certs/ca-certificates.crt
+export OPENSSL_CONF=/home/AD.NORCERESEARCH.NO/geev/.config/ssl.conf
 

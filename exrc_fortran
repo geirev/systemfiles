@@ -12,6 +12,9 @@ map  :!make new:!make tags:!make
 map  :!make new
 map  :!make tags
 
+"":set colorcolumn=133
+match Error /\%133v.\+/
+
 :iab brea 
 \real, intent(in) ::
 
