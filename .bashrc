@@ -236,8 +236,8 @@ fi
 
 PATH="$PATH:/usr/local/bin"
 PATH="$PATH:/ecl/macros"
-PATH="$PATH:$HOME/.tecplot/360ex_2022r2/bin"
-PATH="$PATH:$HOME/.tecplot/chorus_2022r2/bin"
+PATH="$PATH:$HOME/.tecplot/360ex_2023r1/bin"
+PATH="$PATH:$HOME/.tecplot/chorus_2023r1/bin"
 PATH="$PATH:$HOME/.tecplot/tecplotrs2021r2/bin"
 PATH="$PATH:$HOME/bin"
 PATH="$PATH:$HOME/.local/bin"

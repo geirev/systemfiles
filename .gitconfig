@@ -20,6 +20,7 @@
 [core]
 	pager = diff-so-fancy | less --tabs=4 -RFX
 	excludesfile = /home/AD.NORCERESEARCH.NO/geev/.gitignore
+	askpass = git-gui--askpass
 [pager]
 	show = diff-so-fancy | less --tabs=1,5 -RFX
 [color]

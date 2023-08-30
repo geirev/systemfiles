@@ -154,6 +154,8 @@ xnoremap <F7> s<c-r>=substitute(@", '.\ze.', '& ', 'g')<cr>
 nnoremap <F8> ma%x`ax
 " Vim spell checker 
 nnoremap <F9> :setlocal spell! spelllang=en_us<CR>
+" add index of selection
+nnoremap <F10> yiWo\index{}P
 
 "Remapping PgUp PgDw and arrow keys to work in insert mode
 inoremap [6~ 

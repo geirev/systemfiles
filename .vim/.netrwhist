@@ -1,12 +1,12 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =2
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/AD.NORCERESEARCH.NO/geev/Dropbox/Statoil/eclipse/refcase'
+let g:netrw_dirhist_5='/home/AD.NORCERESEARCH.NO/geev/Dropbox/Apps/Overleaf/DAReview/Fig_chap12_KF'
+let g:netrw_dirhist_4='/home/AD.NORCERESEARCH.NO/geev/Dropbox/Apps/Overleaf/DAReview/Fig_chap22_Seir'
+let g:netrw_dirhist_3='/home/AD.NORCERESEARCH.NO/geev/Dropbox/Programs/EnKF_sampling/lib'
 let g:netrw_dirhist_2='/home/AD.NORCERESEARCH.NO/geev/Dropbox/Programs'
 let g:netrw_dirhist_1='/home/AD.NORCERESEARCH.NO/geev/Dropbox/Programs/Matmul/src'
 let g:netrw_dirhist_0='/home/AD.NORCERESEARCH.NO/geev/Dropbox/Programs/Matmul'
 let g:netrw_dirhist_9='/home/AD.NORCERESEARCH.NO/geev/Dropbox/Programs'
 let g:netrw_dirhist_8='/home/AD.NORCERESEARCH.NO/geev/Dropbox/Statoil/ert1000/logs'
 let g:netrw_dirhist_7='/home/AD.NORCERESEARCH.NO/geev/.conan2'
-let g:netrw_dirhist_6='/home/AD.NORCERESEARCH.NO/geev/Dropbox/Programs/EnKF_MS/.git'
-let g:netrw_dirhist_5='/home/AD.NORCERESEARCH.NO/geev/Dropbox/Programs/Schedule_parser/src'
-let g:netrw_dirhist_4='/home/AD.NORCERESEARCH.NO/geev/ERT/ert1000/jobs'
-let g:netrw_dirhist_3='/home/AD.NORCERESEARCH.NO/geev/Dropbox/Statoil/eclipse/refcase'

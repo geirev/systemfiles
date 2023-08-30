@@ -24,13 +24,15 @@ match Error /\%133v.\+/
 :iab bcha 
 \character(len=3), intent(in) ::
 
+:iab bpri 
+\print '(a,10f13.4)','desc: ',X(1,1:10)
 
 :iab bdo 
 \for i=1,100
 \do
 \enddo
 
-:iab bsel 
+:iab bsel
 \select case(VAR)
 \case('xxx')
 \case default
