@@ -119,6 +119,9 @@ if [ "$color_prompt" = yes ]; then
     "bgo-1515")
        PS1+="\[$COLOR_BLUE\]\h"
        ;;
+    "UX430UNR")
+       PS1+="\[$COLOR_BLUE\]\h"
+       ;;
     *)
        PS1+="\[$COLOR_YELLOW\]\h"
        ;;
@@ -201,6 +204,11 @@ function dwork {
 function venv {
    sed -i 's/PS1="(venv) /PS1="$COLOR_YELLOW(venv) $COLOR_RESET/'  ~/ERT/venv/bin/activate
    . ~/ERT/venv/bin/activate
+}
+
+function ecalcvenv {
+   sed -i 's/PS1="(ecalcvenv) /PS1="$COLOR_YELLOW(ecalcvenv) $COLOR_RESET/'  ~/ERT/ecalcvenv/bin/activate
+   . ~/ERT/ecalcvenv/bin/activate
 }
 
 function gg {

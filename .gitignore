@@ -1,3 +1,4 @@
 .vim/undo
 .vim/cache/.viminfo
+.vim/cache/
 .vim/.netrwhist
